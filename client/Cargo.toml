@@ -1,0 +1,14 @@
+[package]
+name = "rust-playground-client"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+prost = "0.13.2"
+tokio = { version = "1.36.0", features = ["macros", "rt-multi-thread"] }
+tonic = "0.12.2"
+
+[build-dependencies]
+tonic-build = "0.12.2"
