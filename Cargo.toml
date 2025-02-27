@@ -1,4 +1,20 @@
-[workspace]
-resolver = "2"
+[package]
+name = "rust-playground"
+version = "0.1.0"
+edition = "2021"
 
-members = ["server", "client"]
+[dependencies]
+tracing = "0.1.41"
+tracing-subscriber = "0.3.19"
+build_deps = { path = "build_deps" }
+
+[build-dependencies]
+build_deps = { path = "build_deps" }
+
+[lib]
+name = "rust_playground"
+path = "src/lib.rs"
+
+[[bin]]
+name = "rust-playground"
+path = "src/main.rs"
