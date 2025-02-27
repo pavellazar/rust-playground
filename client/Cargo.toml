@@ -1,0 +1,9 @@
+[package]
+name = "client"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+runner-extended = { path = "../runner-extended" }
+tracing = "0.1.14"
+tracing-subscriber = "0.3.19"

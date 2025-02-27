@@ -1,7 +1,0 @@
-[package]
-name = "build_deps"
-version = "0.1.0"
-edition = "2021"
-
-[dependencies]
-# Add any dependencies needed for list_operations, e.g., reqwest
