@@ -1,3 +1,0 @@
-[workspace]
-members = ["runner", "runner-extended", "client"]
-resolver = "2"                                    # Use the latest resolver (optional but recommended)
