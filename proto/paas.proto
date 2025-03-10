@@ -1,0 +1,9 @@
+syntax = "proto3";
+package paas;
+
+service ProofService {
+  rpc Run(stream ProofRequest) returns (stream ProofResponse) {}
+}
+
+message ProofRequest { uint32 n = 1; }
+message ProofResponse { uint64 result = 1; }
